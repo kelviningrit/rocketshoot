@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+    font-family:  sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background: url(../../public/main-bg.png) no-repeat 0 0 / cover;
+    letter-spacing: .8px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 7;
+  padding: 10px;
+}
+
+.banner {
+  position: relative;
+  padding: 100px 0 40px;
+  min-height: 890px;
+  overflow: hidden;
+}
+.banner .overlay .hero-bg {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner .container .bannerSec .leftSec .banner-content {
+  position: relative;
+  z-index: 5;
+}
+
+.banner .container .bannerSec .leftSec .banner-content h1{
+font-size: 3.5em;
+}
+
+
+.banner .sausage-img{
+  max-width: 160px;
+}
+
+.banner .container .bannerSec .rightSec {
+  position: relative;
+}
+
+.banner .container .bannerSec .rightSec .walletBox {
+  width: 100%;
+  max-width: 520px;
+  z-index: 1;
+  margin-left: auto;
+  position: relative;
+  background: linear-gradient(0deg, rgba(172, 142, 235, 0.4), rgba(172, 142, 235, 0.4)), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  backdrop-filter: blur(10px);
+  padding: 14px 7px;
+  border-radius: 16px;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.banner .container .bannerSec .rightSec .walletBox .swapArea {
+  position: relative;
+}
+.btn{
+  font-size: 15px;
+    font-weight: 400;
+    border-radius: 35px;
+    letter-spacing: .5px;
+    border: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    min-height: 45px;
+}
+.btn-primary {
+  color: #fff !important;
+  background: #ba8bf9 !important;
+}
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.font-23 {
+  font-size: 23px !important;
+}
+.stats{
+  border-top: 4px solid #8968b9;
+  border-bottom: 4px solid #8968b9;
+  background: #6C42A8;
+}
+
+.iframe-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+@media screen and (max-width: 1499px) {
+  .hotdog-img {
+      right: 0;
+  }
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.hotdog-img {
+  position: absolute;
+  max-width: 250px;
+  right: -100px;
+  top: -80px;
+  transform: rotate(15deg);
+}
+@media (min-width: 1025px) {
+  .d-lg-block {
+      display: block !important;
+  }
+}
+.d-none {
+  display: none !important;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+img, svg {
+  vertical-align: middle;
+}
+
+@media (min-width: 576px) {
+  .font-sm-36 {
+      font-size: 36px !important;
+}
+}
+
+
+@media (min-width: 1025px) {
+  .my-lg-5 {
+      margin-top: 3rem !important;
+      margin-bottom: 3rem !important;
+  }
+}
