@@ -10,7 +10,7 @@ const local = localFont({
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "RocketShoot Online To The Moon",
+  title: "Frostproperties Online",
   description: "",
 };
 
