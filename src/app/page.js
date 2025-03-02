@@ -82,7 +82,7 @@ export default function Home() {
                 <div className="col-12 col-md-7 col-lg-8 leftSec">
                     <div className="banner-content">
                       <h1 translate="" className="mt-4">
-                        <span  translate="" class="text-primary">RocketShoot AI</span>
+                        <span  translate="" class="text-primary">Frostproperties AI</span>
                         <br />
                           <span translate="" class="font-40 font-sm-60 fw-regular">Part Dog, Part Sausage, Part</span>
                           <br />
